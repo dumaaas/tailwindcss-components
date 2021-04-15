@@ -1,0 +1,81 @@
+/*Animations*/
+
+.stats-bar-green {
+    width: 0px;
+    animation: green-bar 1s ease forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes green-bar {
+    
+    from { width: 0%; }
+    to { width: 250px; } 
+  }
+  
+  .number-green {
+    opacity: 0;
+    animation: number-yellow 0.5s ease-in forwards;
+    animation-delay: 2s;
+  }
+  
+  @keyframes number-green {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+  }
+  
+  .stats-bar-yellow {
+    width: 0px;
+  
+    animation: yellow-bar 1s ease forwards;
+    animation-delay: 1s;
+  }
+  
+  @keyframes yellow-bar {
+    from { width: 0%; }
+    to { width: 150px; } 
+  }
+  
+  .number-yellow {
+    opacity: 0;
+    animation: number-yellow 0.5s ease-in forwards;
+    animation-delay: 2.2s;
+  }
+  
+  @keyframes number-yellow {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+  }
+  
+  .stats-bar-red {
+    width: 0px;
+  
+    animation: red-bar 1s ease forwards;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes red-bar {
+    from { width: 0%; }
+    to { width: 80px; } 
+  }
+  
+  .number-red {
+    opacity: 0;
+    animation: number-red 0.5s ease-in forwards;
+    animation-delay: 2.4s;
+  }
+  
+  @keyframes number-red {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply overflow-hidden;
+    font-family: "Courier New"
+  }
+}
