@@ -6,66 +6,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Components</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
-<body class="bg-[#222222]">
-    <div class="bg-white shadow-2xl padding-[40px] h-[330px] w-[700px] mx-auto mt-[15%]">
-        <div class="w-[610px] relative mx-auto">
-            <h2 class="text-center text-[20px] font-bold uppercase mb-[20px] py-[30px]">
-                Stats
-            </h2>
-            <div class="text-right">
-                <div class="flex pb-[30px]">
-                    <a class="text-[15px] min-w-[190px] text-blue-600 hover:text-blue-800" href="#">
-                        Statistic 1
-                    </a>
-                    <div class="ml-[30px] bg-green-600 transition duration-500 ease-in-out group hover:bg-green-200 stats-bar-green h-[26px]">
-                        <p class="pr-[5px] mt-[2px] text-white font-bold number-green group-hover:text-green-800">
-                            73
-                        </p>
+<body class="bg-[#222222] scroll">
+    <div class="owl-carousel owl-theme">
+        <!-- STATISTIC BAR COMPONENT -->
+        <div class="item bg-[#222222] card-shadow padding-[40px] h-[330px] w-[700px] mx-auto mt-[15%]">
+            <div class="w-[610px] text-purple-500 relative mx-auto">
+                <h2 class="text-center text-[20px] font-bold uppercase mb-[20px] py-[30px]">
+                    Stats
+                </h2>
+                <div class="text-right">
+                    <div class="flex pb-[30px]">
+                        <a class="text-[15px] min-w-[190px] hover:text-purple-700" href="#">
+                            Statistic 1
+                        </a>
+                        <div class="ml-[30px] bg-green-600 transition duration-500 ease-in-out group hover:bg-green-200 stats-bar-green h-[26px]">
+                            <p class="pr-[5px] mt-[2px] text-green-900 font-bold number-green">
+                                73
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex pb-[30px] ">
+                        <a class="text-[15px] min-w-[190px] hover:text-purple-700" href="#">
+                            Statistic 2
+                        </a>
+                        <div class="ml-[30px] bg-[#EE9331] transition duration-500 ease-in-out group hover:bg-yellow-200 stats-bar-yellow  h[26px]">
+                            <p class="pr-[5px] mt-[2px] font-medium number-yellow text-yellow-900">
+                                44
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex pb-[30px]">
+                        <a class="text-[15px] min-w-[190px] hover:text-purple-700" href="#">
+                            Statistic 3
+                        </a>
+                        <div class="ml-[30px] bg-red-500 transition duration-500 ease-in-out group hover:bg-red-200 stats-bar-red h-[26px]">
+                            <p class="pr-[5px] mt-[2px] font-medium number-red text-red-900">
+                                25
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex pb-[30px] ">
-                    <a class="text-[15px] min-w-[190px] text-blue-600 hover:text-blue-800" href="#">
-                        Statistic 2
-                    </a>
-                    <div class="ml-[30px] bg-[#EE9331] transition duration-500 ease-in-out group hover:bg-yellow-200 stats-bar-yellow  h-[26px]">
-                        <p class="pr-[5px] mt-[2px] text-white font-medium number-yellow group-hover:text-yellow-800">
-                            44
-                        </p>
-                    </div>
+                <div class="absolute h-[220px] w-[2px] bg-purple-500 top-[78px] left-[218px]">
                 </div>
-                <div class="flex pb-[30px]">
-                    <a class="text-[15px] min-w-[190px] text-blue-600 hover:text-blue-800" href="#">
-                        Statistic 3
-                    </a>
-                    <div class="ml-[30px] bg-[#BD2E2E] transition duration-500 ease-in-out group hover:bg-red-200 stats-bar-red h-[26px]">
-                        <p class="pr-[5px] mt-[2px] text-white font-medium number-red group-hover:text-red-800">
-                            25
-                        </p>
-                    </div>
+                <div class="absolute font-medium flex conte left-[220px] border-t-[2px] border-purple-500 top-[248px] pr-[87px]">
+                    <p class="ml-[-13px]">
+                        0
+                    </p>
+                    <p class="ml-[57px]">
+                        20
+                    </p>
+                    <p class="ml-[57px]">
+                        40
+                    </p>
+                    <p class="ml-[57px]">
+                        60
+                    </p>
+                    <p class="ml-[57px]">
+                        80
+                    </p>
                 </div>
             </div>
-            <div class="absolute h-[220px] w-[2px] bg-black top-[78px] left-[218px]">
-            </div>
-            <div class="absolute font-medium flex conte left-[220px] border-t-[2px] border-gray-300 top-[248px] pr-[87px]">
-                <p class="ml-[-13px]">
-                    0
-                </p>
-                <p class="ml-[57px]">
-                    20
-                </p>
-                <p class="ml-[57px]">
-                    40
-                </p>
-                <p class="ml-[57px]">
-                    60
-                </p>
-                <p class="ml-[57px]">
-                    80
-                </p>
+        </div>
+        <!-- DROPDOWN MENU WITH SEARCH COMPONENT -->
+        <div class="item bg-[#222222] card-shadow padding-[40px] h-[330px] w-[700px] mx-auto mt-[15%]">
+            <div class="rounded">
+                <div class="relative mx-auto w-[183px] pt-[18%]">
+                    <button class="border-2 bg-[#222222] border-purple-500 p-[10px] text-purple-500 w-auto rounded focus:outline-none" id="uceniciMenu">
+                        <span class="float-left">Dropdown: All <i
+                                class="px-[7px] fas fa-angle-down"></i></span>
+                    </button>
+                    <div id="uceniciDropdown"
+                        class="uceniciMenu hidden absolute rounded bg-[#222222] min-w-[310px] p-[10px] text-purple-500 shadow-md pin-t pin-l border-2 border-purple-500 ">
+                        <ul class="border-b-2 border-purple-500 list-reset">
+                            <li class="p-2 pb-[15px] border-b-[2px] relative border-purple-500">
+                                <input class="w-full h-10 px-2 placeholder-current bg-transparent border-2 border-purple-500 rounded focus:outline-none"
+                                    placeholder="Search..."
+                                    onkeyup="filterFunction('searchUcenici', 'uceniciDropdown')"
+                                    id="searchUcenici"><br>
+                                <button
+                                    class="absolute block text-xl text-center transition-colors w-7 h-7 leading-0 top-[14px] right-4 focus:outline-none hover:text-purple-900">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </li>
+                            <div class="h-[200px] scroll">
+                                <li class="flex p-2 mt-[4px] pt-[15px] hover:bg-[#343434] pr-[4px] w-[264px]">
+                                    <label class="flex items-center justify-start">
+                                        <div
+                                            class="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 bg-transparent border-2 border-purple-500 rounded focus-within:border-purple-500">
+                                            <input type="checkbox" class="absolute opacity-0">
+                                            <svg class="hidden w-4 h-4 text-purple-500 pointer-events-none fill-current"
+                                                viewBox="0 0 20 20">
+                                                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <img width="40px" height="30px" class="profile-img__dropdown ml-[15px] rounded-full"
+                                        src="img/profileStudent.jpg">
+                                    <p
+                                        class="block p-2 cursor-pointer">
+                                        Stefan Tomovic
+                                    </p>
+                                </li>
+                                <li class="flex p-2 mt-[2px] pt-[15px] hover:bg-[#343434] pr-[4px] w-[264px]">
+                                    <label class="flex items-center justify-start">
+                                        <div
+                                            class="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 bg-transparent border-2 border-purple-500 rounded focus-within:border-purple-500">
+                                            <input type="checkbox" class="absolute opacity-0">
+                                            <svg class="hidden w-4 h-4 text-purple-500 pointer-events-none fill-current"
+                                                viewBox="0 0 20 20">
+                                                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <img width="40px" height="30px" class="profile-img__dropdown ml-[15px] rounded-full"
+                                        src="img/profileStudent.jpg">
+                                    <p
+                                        class="block p-2 cursor-pointer">
+                                        Pero Perovic
+                                    </p>
+                                </li>
+                                <li class="flex p-2 mt-[2px] pt-[15px] hover:bg-[#343434] pr-[4px] w-[264px]">
+                                    <label class="flex items-center justify-start">
+                                        <div
+                                            class="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 bg-transparent border-2 border-purple-500 rounded focus-within:border-purple-500">
+                                            <input type="checkbox" class="absolute opacity-0">
+                                            <svg class="hidden w-4 h-4 text-purple-500 pointer-events-none fill-current"
+                                                viewBox="0 0 20 20">
+                                                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <img width="40px" height="30px" class="profile-img__dropdown ml-[15px] rounded-full"
+                                        src="img/profileStudent.jpg">
+                                    <p
+                                        class="block p-2 cursor-pointer">
+                                        Marko Markovic
+                                    </p>
+                                </li>
+                                <li class="flex p-2 mt-[2px] pt-[15px] hover:bg-[#343434] pr-[4px] w-[264px]">
+                                    <label class="flex items-center justify-start">
+                                        <div
+                                            class="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 bg-transparent border-2 border-purple-500 rounded focus-within:border-purple-500">
+                                            <input type="checkbox" class="absolute opacity-0">
+                                            <svg class="hidden w-4 h-4 text-purple-500 pointer-events-none fill-current"
+                                                viewBox="0 0 20 20">
+                                                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <img width="40px" height="30px" class="profile-img__dropdown ml-[15px] rounded-full"
+                                        src="img/profileStudent.jpg">
+                                    <p
+                                        class="block p-2 cursor-pointer">
+                                        Nikola Nikolic
+                                    </p>
+                                </li>
+                                <li class="flex p-2 mt-[2px] pt-[15px] hover:bg-[#343434] pr-[4px] w-[264px]">
+                                    <label class="flex items-center justify-start">
+                                        <div
+                                            class="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 bg-transparent border-2 border-purple-500 rounded focus-within:border-purple-500">
+                                            <input type="checkbox" class="absolute opacity-0">
+                                            <svg class="hidden w-4 h-4 text-purple-500 pointer-events-none fill-current"
+                                                viewBox="0 0 20 20">
+                                                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <img width="40px" height="30px" class="profile-img__dropdown ml-[15px] rounded-full"
+                                        src="img/profileStudent.jpg">
+                                    <p
+                                        class="block p-2 cursor-pointer">
+                                        Zivko Zivkovic
+                                    </p>
+                                </li>
+                                <li class="flex p-2 pr-[4px] mt-[2px] pt-[15px] hover:bg-[#343434] w-[264px] mb-[4px]">
+                                    <label class="flex items-center justify-start">
+                                        <div
+                                            class="flex items-center justify-center flex-shrink-0 w-6 h-6 mr-2 bg-transparent border-2 border-purple-500 rounded focus-within:border-purple-500">
+                                            <input type="checkbox" class="absolute opacity-0">
+                                            <svg class="hidden w-4 h-4 text-purple-500 pointer-events-none fill-current"
+                                                viewBox="0 0 20 20">
+                                                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <img width="40px" height="30px" class="profile-img__dropdown ml-[15px] rounded-full"
+                                        src="img/profileStudent.jpg">
+                                    <p
+                                        class="block p-2 cursor-pointer">
+                                        Petar Petrovic
+                                    </p>
+                                </li>
+                            </div>
+                        </ul>
+                        <div class="flex pt-[10px]">
+                            <a href="#"
+                                class="py-2 px-[20px] transition duration-300 ease-in hover:bg-purple-700 bg-purple-500 rounded-[10px] text-white">Save</a>
+                            <a href="#"
+                                class="ml-[20px] py-2 px-[20px] transition duration-300 ease-in bg-red-500 hover:bg-red-600 text-white rounded-[10px]">Cancel</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- SCRIPTS -->
+    <script src="js/jquery.min.js " defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script src="js/app.js " defer></script>
 </body>
 </html>

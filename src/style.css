@@ -1,5 +1,24 @@
-/*Animations*/
+/*Checkbox dashboard activity*/
+input:checked + svg {
+  display: block;
+}
 
+/*Card shadow*/
+.card-shadow {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/*Slider*/
+
+.owl-stage-outer {
+  padding-bottom: 30px !important;
+}
+
+.profile-img__dropdown {
+  width: 40px !important;
+}
+
+/*Animations*/
 .stats-bar-green {
     width: 0px;
     animation: green-bar 1s ease forwards;
@@ -68,6 +87,44 @@
     0% { opacity: 0; }
     100% { opacity: 1; } 
   }
+
+  
+/* Showing scroll only on hover of the content */
+.scroll {
+  overflow-y: scroll;
+  mask-image: linear-gradient(to top, transparent, black),
+    linear-gradient(to left, transparent 17px, black 17px);
+  mask-size: 100% 20000px;
+  mask-position: left bottom;
+  -webkit-mask-image: linear-gradient(to top, transparent, black),
+    linear-gradient(to left, transparent 17px, black 17px);
+  -webkit-mask-size: 100% 20000px;
+  -webkit-mask-position: left bottom;
+  transition: mask-position 0.3s, -webkit-mask-position 0.3s;
+}
+
+.scroll:hover {
+  -webkit-mask-position: left top;
+}
+
+/* Styling scroll */
+.scroll::-webkit-scrollbar-track,
+.sidebar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.scroll::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+.scroll::-webkit-scrollbar-thumb,
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #c9c8c8;
+}
 
 @tailwind base;
 @tailwind components;
