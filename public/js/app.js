@@ -34,7 +34,6 @@ function filterFunction(id, dropdown) {
 
 //slider
 $('.owl-carousel').owlCarousel({
-  loop: true,
   lazyLoad: true,
   items: 1,
   smartSpeed: 1400,
