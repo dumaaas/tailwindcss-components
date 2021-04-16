@@ -12,6 +12,11 @@ input:checked + svg {
 
 .owl-stage-outer {
   padding-bottom: 30px !important;
+  overflow: visible !important;
+}
+
+.owl-carousel {
+  padding-bottom: 140px;
 }
 
 .profile-img__dropdown {

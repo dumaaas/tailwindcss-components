@@ -12,6 +12,11 @@ input:checked + svg {
 
 .owl-stage-outer {
   padding-bottom: 30px !important;
+  overflow: visible !important;
+}
+
+.owl-carousel {
+  padding-bottom: 140px;
 }
 
 .profile-img__dropdown {
@@ -867,9 +872,6 @@ body {
 }
 .w-4 {
   width: 1rem;
-}
-.w-\[40px\] {
-  width: 40px;
 }
 .min-w-\[190px\] {
   min-width: 190px;
